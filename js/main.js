@@ -8,4 +8,12 @@ function saveBookmark(e) {
   // Get form values
   var siteName = document.getElementById("siteName").value;
   var siteUrl = document.getElementById("siteUrl").value;
+
+  // Save values into bookmark object
+  var bookmark = {
+    name: siteName,
+    url: siteUrl
+  };
+
+  console.log(bookmark);
 }
