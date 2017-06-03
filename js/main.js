@@ -16,6 +16,15 @@ function saveBookmark(e) {
     return false;
   }
 
+  // Email format validation
+  var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+  var regex = new RegExp(expression);
+
+  if(!siteUrl.match(regex)){
+    alert('Please use a valid URL');
+    return false;
+  }
+
   // Save values into bookmark object
   var bookmark = {
     name: siteName,
