@@ -15,5 +15,9 @@ function saveBookmark(e) {
     url: siteUrl
   };
 
-  console.log(bookmark);
+  // Local storage test
+  localStorage.setItem('test', 'Hello World');
+  console.log(localStorage.getItem('test'));
+  localStorage.removeItem('test');
+  console.log(localStorage.getItem('test'));
 }
