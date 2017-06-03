@@ -40,3 +40,11 @@ function saveBookmark(e) {
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
 }
+
+// Fetch bookmarks
+function fetchBookmarks() {
+  // Get bookmarks from local storage
+  var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+
+  console.log(bookmarks);
+}
