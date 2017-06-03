@@ -41,6 +41,11 @@ function saveBookmark(e) {
   }
 }
 
+// Delete bookmark
+function deleteBookmark(url) {
+  console.log(url);
+}
+
 // Fetch bookmarks
 function fetchBookmarks() {
   // Get bookmarks from local storage
